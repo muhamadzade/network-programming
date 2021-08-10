@@ -16,7 +16,7 @@ for to in toLs:
     msg.attach(MIMEText(body,'plain'))
     server=smtplib.SMTP('smtp.gmail.com:587')
     server.starttls()
-    server.login(fromaddr,'3agevelgard')
+    server.login(fromaddr,'#########')
     text=msg.as_string()
     server.sendmail(fromaddr,to,text)
     print('Email send')
